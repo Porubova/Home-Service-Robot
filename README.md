@@ -107,6 +107,17 @@ Navigate to clonned project workspace
 ```sh
 cd Home-Service-Robot/catkin_cw
 ```
+
+Install  ROS packages
+```sh
+cd /src
+git clone https://github.com/ros-perception/slam_gmapping.git  
+git clone https://github.com/turtlebot/turtlebot.git  
+git clone https://github.com/turtlebot/turtlebot_interactions.git  
+git clone https://github.com/turtlebot/turtlebot_simulator.git
+git clone https://github.com/ros-teleop/teleop_twist_keyboard
+cd ..
+```
 Update and install dependencies for ROS packages
 ```sh
 sudo apt-get update
@@ -114,6 +125,7 @@ rosdep -i install gmapping -y
 rosdep -i install turtlebot_teleop -y
 rosdep -i install turtlebot_rviz_launchers -y
 rosdep -i install turtlebot_gazebo -y
+catkin_make
 ```
 
 Chanage acces priveleges to shell scripts 
