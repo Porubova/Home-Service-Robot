@@ -111,6 +111,11 @@ cd Home-Service-Robot/catkin_cw
 Install  ROS packages
 ```sh
 cd /src
+rmdir turtlebot
+rmdir slam_gmapping
+rmdir turtlebot_interactions
+rmdir turtlebot_simulator
+rmdir teleop_twist_keyboard
 git clone https://github.com/ros-perception/slam_gmapping.git  
 git clone https://github.com/turtlebot/turtlebot.git  
 git clone https://github.com/turtlebot/turtlebot_interactions.git  
